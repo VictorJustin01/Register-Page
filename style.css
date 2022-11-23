@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(131,58,180);
+background: linear-gradient(58deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+.register-card{
+    
+    width: 450px;
+    padding: 50px;
+    background: rgba(255,255,255, .2);
+    border-radius: 10px;
+    position: relative;
+}
+.register-card-header h1{
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 35px;
+}
+.register-card-header-text{
+    margin-bottom: 20px;
+}
+.register-card-logo{
+    margin-bottom: 20px;
+}
+.register-card-logo img{
+    width: 60px;
+}
+.register-card-header,
+.register-card-logo,
+.register-card-social{
+    text-align: center;
+}
+.register-card-form{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    
+
+}
+.register-card-form-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.register-card-form-item input{
+outline: none;
+border: none;
+padding: 10px;
+width: 100%;
+border-radius: 5px;
+}
+.register-card-form-item input:hover{
+    background-color: bisque;
+    transition: .5s;
+}
+.register-card-btn{
+    border-radius: 25px;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+
+}
+.register-card-btn:hover{
+    background-color: bisque;
+    transition: .5s;
+}
+@media(max-width: 760px){
+    body{
+        padding: 2rem 0;
+    }
+    .register-card{
+        width: 300px;
+        padding: 2rem;
+    }
+}
